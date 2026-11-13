@@ -66,11 +66,32 @@
   const tens = ["", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"];
 
   function read(key) {
-    try { return JSON.parse(localStorage.getItem(key)) || []; } catch (e) { return []; }
+    try {
+      const raw = localStorage.getItem(key);
+      if (raw == null || raw === "") return [];
+      const parsed = JSON.parse(raw);
+      return parsed == null ? [] : parsed;
+    } catch (e) {
+      return [];
+    }
   }
-  function write(key, value) { localStorage.setItem(key, JSON.stringify(value)); }
+  function write(key, value) {
+    try {
+      localStorage.setItem(key, JSON.stringify(value));
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
   function session() {
-    try { return JSON.parse(localStorage.getItem(KEYS.session)); } catch (e) { return null; }
+    try {
+      const raw = localStorage.getItem(KEYS.session);
+      if (!raw) return null;
+      const parsed = JSON.parse(raw);
+      return parsed && typeof parsed === "object" ? parsed : null;
+    } catch (e) {
+      return null;
+    }
   }
   function under1000(n) {
     if (n < 20) return ones[n];
@@ -189,17 +210,26 @@
     if (out) out.addEventListener("click", () => { localStorage.removeItem(KEYS.session); location.href = "index.html"; });
   }
 
+  function currentPage() {
+    let page = (location.pathname.split("/").pop() || "index.html").trim();
+    if (!page || page === "tender") page = "index.html";
+    if (!/\.html$/i.test(page)) page += ".html";
+    return page;
+  }
+
   function requireUser() {
     if (session()) return session();
-    const next = location.pathname.split("/").pop() + location.search;
+    const next = currentPage() + location.search;
     location.href = "login.html?next=" + encodeURIComponent(next);
     return null;
   }
 
   function safeNext(value) {
     if (!value) return "dashboard.html";
-    if (!/^[a-z0-9-]+\.html(\?id=[a-z0-9-]+)?$/i.test(value)) return "dashboard.html";
-    return value;
+    const raw = String(value).trim();
+    const match = raw.match(/^([a-z0-9-]+)(?:\.html)?(\?id=[a-z0-9-]+)?$/i);
+    if (!match) return "dashboard.html";
+    return match[1].toLowerCase() + ".html" + (match[2] || "");
   }
 
   function updateStatusCounts() {
@@ -756,9 +786,13 @@
         event.preventDefault();
         const status = login.querySelector("[data-status]");
         const email = login.email.value.trim().toLowerCase();
-        const user = read(KEYS.users).find((item) => item.email === email && item.password === login.password.value);
+        const users = Array.isArray(read(KEYS.users)) ? read(KEYS.users) : [];
+        const user = users.find((item) => item.email === email && item.password === login.password.value);
         if (!user) { status.textContent = t("q.badLogin"); return; }
-        write(KEYS.session, { name: user.name, email: user.email, address: user.address, tel: user.tel });
+        if (!write(KEYS.session, { name: user.name, email: user.email, address: user.address, tel: user.tel })) {
+          status.textContent = t("auth.storageFail");
+          return;
+        }
         location.href = safeNext(new URLSearchParams(location.search).get("next"));
       });
     }
@@ -768,7 +802,7 @@
         event.preventDefault();
         const status = register.querySelector("[data-status]");
         const email = register.email.value.trim().toLowerCase();
-        const users = read(KEYS.users);
+        const users = Array.isArray(read(KEYS.users)) ? read(KEYS.users) : [];
         if (users.some((item) => item.email === email)) { status.textContent = t("q.taken"); return; }
         const user = {
           name: register.name.value.trim(),
@@ -778,8 +812,10 @@
           password: register.password.value,
         };
         users.push(user);
-        write(KEYS.users, users);
-        write(KEYS.session, { name: user.name, email: user.email, address: user.address, tel: user.tel });
+        if (!write(KEYS.users, users) || !write(KEYS.session, { name: user.name, email: user.email, address: user.address, tel: user.tel })) {
+          status.textContent = t("auth.storageFail");
+          return;
+        }
         const next = safeNext(new URLSearchParams(location.search).get("next"));
         location.href = next === "dashboard.html" ? "index.html" : next;
       });

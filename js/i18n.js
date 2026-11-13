@@ -192,6 +192,7 @@
       "ipg.paidLine": "Tender fee {amount} paid · {ref}",
       "q.badLogin": "That email and password do not match a bidder account.",
       "q.taken": "That email is already registered. Sign in instead.",
+      "auth.storageFail": "Could not save your account in this browser. Allow site data / local storage and try again.",
       "lot.lead": "Sold by highest offer. Inspect the vehicle at the yard before you quote. The sale follows the quotation terms on the paper form.",
       "lot.terms": "Terms that apply to this quotation",
       "lot.this": "This lot",
