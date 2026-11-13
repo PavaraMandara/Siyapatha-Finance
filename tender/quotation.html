@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper quotation | Siyapatha Finance PLC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="../assets/logo.png">
+  <link rel="stylesheet" href="../css/tender.css">
+  <link rel="stylesheet" href="../css/splash.css">
+  <script src="../js/splash.js"></script>
+</head>
+<body class="quote-page">
+  <div data-header></div>
+  <div class="tools"><button type="button" onclick="window.print()">Print form</button></div>
+  <main class="sheets">
+    <form class="paper" action="#" onsubmit="return false">
+      <img class="paper-logo" src="../assets/logo.png" alt="Siyapatha Finance">
+      <p class="addr">No. 46/12, Sayuru Sewana, Nawam Mawatha, Colombo 02.<br>Tel : 0117 605 605</p>
+      <h2>Quotation</h2>
+      <label class="q-row"><span>Date</span><span>:</span><input name="date" aria-label="Date"></label>
+      <label class="q-row"><span>Vehicle No</span><span>:</span><input name="vehicle" aria-label="Vehicle number"></label>
+      <label class="q-row"><span>Name</span><span>:</span><input name="name" aria-label="Name"></label>
+      <label class="q-row"><span>Address</span><span>:</span><input name="address" aria-label="Address"></label>
+      <label class="q-row"><span>Tel No</span><span>:</span><input name="tel" aria-label="Telephone number"></label>
+      <label class="q-row"><span>Price Quoted</span><span>:</span><input name="price" aria-label="Price quoted"></label>
+      <label class="q-row"><span>Amount in Word</span><span>:</span><input name="words" aria-label="Amount in words"></label>
+      <label class="q-row"><span>Signature</span><span>:</span><input name="signature" aria-label="Signature"></label>
+      <p class="fee">TENDER FEE Rs. 400/=</p>
+      <p class="refer">* Please refer the Terms &amp; Conditions for Quotation mentioned in over leaf.</p>
+    </form>
+    <article class="paper">
+      <img class="paper-logo" src="../assets/logo.png" alt="Siyapatha Finance">
+      <p class="addr">No. 46/12, Sayuru Sewana, Nawam Mawatha, Colombo 02.<br>Tel : 0117 605 605</p>
+      <h2>Terms &amp; Conditions</h2>
+      <ol>
+        <li><b>01.</b> The company reserves the right to withdraw any vehicle from the tender process without any notice.</li>
+        <li><b>02.</b> The successful bidder has to pay the full bidding amount within 03 working days if the company decides to sell vehicles on tender. The company also has the right to sell the vehicles to any other party.</li>
+        <li><b>03.</b> Vehicles will be sold as is and will not be returned to the company for any reason, and the company is not liable to accept the vehicle after sale.</li>
+        <li><b>04.</b> Any advance payments for sale of vehicles on tender will not be refunded and may be forfeited.</li>
+        <li><b>05.</b> On the date of viewing the vehicle you should inspect it properly; complaints will not be accepted after the sale is completed.</li>
+        <li><b>06.</b> Without prejudice to our legal rights, the sale of the vehicle is solely at the discretion of the company.</li>
+        <li><b>07.</b> 25% of the value of the vehicle will be deposited as an advance payment for any purchase.</li>
+      </ol>
+    </article>
+  </main>
+  <script src="../js/i18n.js"></script>
+  <script src="../js/portal.js"></script>
+  <script>Portal.mount("form");</script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quotation | Siyapatha Tenders</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="../assets/logo.png">
+  <link rel="stylesheet" href="../css/tender.css">
+  <link rel="stylesheet" href="../css/splash.css">
+  <script src="../js/splash.js"></script>
+</head>
+<body>
+  <div data-header></div>
+  <main class="quote-layout tn-shell">
+    <aside class="bid-rail">
+      <img class="lot-thumb" data-lot-photo alt="" hidden>
+      <p class="kicker" data-i18n="q.kicker">Digital quotation</p>
+      <h2 data-lot-name>Vehicle</h2>
+      <p class="plate" data-lot-plate></p>
+      <p class="closes" data-lot-closes></p>
+      <p class="help" data-i18n="q.help">This replaces the downloadable PDF. The fields are the same as the printed quotation, and the terms are unchanged.</p>
+      <p class="help" data-i18n="q.fee">Tender fee Rs. 400/= is paid through the secure IPG portal before your quotation is accepted.</p>
+    </aside>
+    <form class="sheet" data-quote>
+      <h1 data-i18n="q.h1">Quotation</h1>
+      <p class="lead">Siyapatha Finance PLC · No. 46/12, Sayuru Sewana, Nawam Mawatha, Colombo 02 · Tel 0117 605 605</p>
+      <div class="field"><label for="date" data-i18n="q.date">Date</label><input id="date" name="date" type="date" required></div>
+      <div class="field"><label for="vehicleNo" data-i18n="q.vehicle">Vehicle No</label><input id="vehicleNo" name="vehicleNo" readonly></div>
+      <div class="field"><label for="name" data-i18n="reg.name">Name</label><input id="name" name="name" required></div>
+      <div class="field"><label for="address" data-i18n="reg.address">Address</label><textarea id="address" name="address" required></textarea></div>
+      <div class="field"><label for="tel" data-i18n="reg.tel">Tel No</label><input id="tel" name="tel" required></div>
+      <div class="field"><label for="price" data-i18n="q.price">Price Quoted (Rs.)</label><input id="price" name="price" inputmode="numeric" placeholder="2500000" required></div>
+      <div class="field"><label for="words" data-i18n="q.words">Amount in words</label><input id="words" name="words" required></div>
+      <div class="field"><label for="signature" data-i18n="q.sign">Signature</label><input id="signature" name="signature" data-i18n-placeholder="q.signPh" placeholder="Type your full name" required></div>
+      <ol class="terms-panel" data-terms></ol>
+      <label class="check"><input name="terms" type="checkbox"> <span data-i18n="q.accept">I accept the terms and conditions for this quotation, including the tender fee of Rs. 400/=.</span></label>
+      <button class="btn btn-fill" type="submit" data-i18n="q.submit">Continue to payment</button>
+      <p class="form-status" data-status role="status"></p>
+    </form>
+
+    <section class="ipg-portal" data-ipg hidden>
+      <div class="ipg-brand">
+        <p class="kicker" data-i18n="ipg.kicker">Secure IPG portal</p>
+        <h2 data-i18n="ipg.title">Pay tender fee</h2>
+        <p class="ipg-merchant" data-i18n="ipg.merchant">Siyapatha Finance PLC</p>
+      </div>
+      <div class="ipg-summary">
+        <div>
+          <span data-i18n="ipg.amountLabel">Amount due</span>
+          <strong>Rs. 400.00</strong>
+        </div>
+        <div>
+          <span data-i18n="ipg.forLabel">For</span>
+          <strong data-ipg-lot>Tender quotation fee</strong>
+        </div>
+      </div>
+      <div class="ipg-methods" role="tablist" aria-label="Payment method">
+        <button type="button" class="is-on" data-ipg-method="card" data-i18n="ipg.card">Card</button>
+        <button type="button" data-ipg-method="vishwa" data-i18n="ipg.vishwa">Sampath Vishwa</button>
+      </div>
+      <form class="ipg-card" data-ipg-card novalidate>
+        <div class="field"><label for="ipg-name" data-i18n="ipg.cardName">Name on card</label><input id="ipg-name" name="cardName" autocomplete="cc-name" required placeholder="Name as on card"></div>
+        <div class="field"><label for="ipg-number" data-i18n="ipg.cardNumber">Card number</label><input id="ipg-number" name="cardNumber" inputmode="numeric" autocomplete="cc-number" required placeholder="XXXX XXXX XXXX XXXX" maxlength="19"></div>
+        <div class="ipg-row">
+          <div class="field"><label for="ipg-exp" data-i18n="ipg.expiry">Expiry</label><input id="ipg-exp" name="expiry" inputmode="numeric" autocomplete="cc-exp" required placeholder="MM/YY" maxlength="5"></div>
+          <div class="field"><label for="ipg-cvv" data-i18n="ipg.cvv">CVV</label><input id="ipg-cvv" name="cvv" inputmode="numeric" autocomplete="cc-csc" required placeholder="•••" maxlength="4"></div>
+        </div>
+        <button class="btn btn-fill" type="submit" data-i18n="ipg.pay">Pay Rs. 400.00 securely</button>
+      </form>
+      <div class="ipg-vishwa" data-ipg-vishwa hidden>
+        <p data-i18n="ipg.vishwaHelp">Continue with Sampath Vishwa to pay the Rs. 400/= tender fee, then return here to finish.</p>
+        <button class="btn btn-fill" type="button" data-ipg-vishwa-pay data-i18n="ipg.vishwaPay">Open Sampath Vishwa →</button>
+      </div>
+      <p class="ipg-secure" data-i18n="ipg.secure">256-bit encrypted payment · Prototype IPG for tender fee collection</p>
+      <p class="form-status" data-ipg-status role="status"></p>
+      <button class="btn btn-line" type="button" data-ipg-back data-i18n="ipg.back">Back to quotation</button>
+    </section>
+
+    <section class="done confirm-plate" data-done hidden>
+      <img class="lot-thumb" data-done-photo alt="" hidden>
+      <p class="kicker" data-i18n="q.received">Quotation received</p>
+      <strong data-ref></strong>
+      <p data-done-price></p>
+      <p class="ipg-paid" data-paid-line></p>
+      <p data-i18n="q.note">The company may withdraw the vehicle, and a successful bidder must pay the full amount within 03 working days if the company decides to sell. Keep this reference.</p>
+      <a class="btn btn-fill" href="dashboard.html" data-i18n="q.view">View my quotations</a>
+    </section>
+  </main>
+  <script src="../js/i18n.js"></script>
+  <script src="../js/portal.js"></script>
+  <script>Portal.mount("tenders");</script>
+</body>
+</html>

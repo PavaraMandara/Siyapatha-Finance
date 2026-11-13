@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="title.home">Siyapatha Finance | Home</title>
+  <meta name="description" content="Siyapatha Finance — flexible leasing solutions shaped around your income and lifestyle.">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/splash.css">
+  <script src="js/splash.js"></script>
+</head>
+<body>
+  <a class="skip" href="#path" data-i18n="skip">Skip to the main path</a>
+  <div class="scroll-progress" data-scroll-progress aria-hidden="true"><i></i></div>
+
+  <header class="site-header" data-site-header>
+    <div class="util-bar">
+      <nav class="util-nav" aria-label="Corporate links">
+        <a href="#investor" data-i18n="nav.investor">Investor Relations</a>
+        <a href="#sustainability" data-i18n="nav.sustainability">Sustainability</a>
+        <a href="#kpi" data-i18n="nav.kpi">Financial Information &amp; KPI</a>
+        <a href="#rating" data-i18n="nav.rating">Credit Rating</a>
+      </nav>
+    </div>
+
+    <div class="header header-main">
+        <a class="brand" href="index.html" aria-label="Siyapatha Finance, home">
+          <img class="brand-logo" src="assets/logo.png" alt="Siyapatha Finance">
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav-link is-active" href="index.html" data-i18n="nav.home">Home</a>
+          <div class="nav-item">
+            <button class="nav-link" type="button" aria-expanded="false" aria-haspopup="true">
+            <span data-i18n="nav.about">About Us</span>
+              <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.2 4.3 6 8l3.8-3.7" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="menu" role="menu">
+            <a role="menuitem" href="#about" data-i18n="nav.aboutOverview">Overview</a>
+            <a role="menuitem" href="siyapatha-board-of-directors.html" data-i18n="nav.board">Board of Directors</a>
+          </div>
+        </div>
+          <div class="nav-item">
+            <button class="nav-link" type="button" aria-expanded="false" aria-haspopup="true">
+            <span data-i18n="nav.products">Products</span>
+              <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.2 4.3 6 8l3.8-3.7" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="menu" role="menu">
+            <a role="menuitem" href="leasing.html" data-i18n="nav.leasing">Leasing</a>
+              <a role="menuitem" href="#gold" data-i18n="nav.gold">Gold Financing</a>
+              <a role="menuitem" href="#loans" data-i18n="nav.loans">Loans</a>
+              <a role="menuitem" href="#factoring" data-i18n="nav.factoring">Factoring</a>
+            <a role="menuitem" href="siyapatha-savings.html" data-i18n="nav.savings">Savings</a>
+            <a role="menuitem" href="fixed-deposit-calculator.html" data-i18n="nav.deposits">Fixed Deposits</a>
+          </div>
+        </div>
+          <a class="nav-link" href="tender/index.html" data-i18n="nav.tenders">Tenders</a>
+        <a class="nav-link" href="#careers" data-i18n="nav.careers">Careers</a>
+        <a class="nav-link" href="branch-locator.html" data-i18n="nav.branches">Branch Network</a>
+        <a class="nav-link" href="#news" data-i18n="nav.news">News</a>
+        <a class="nav-link" href="#csr" data-i18n="nav.csr">CSR</a>
+        <a class="nav-link" href="branch-locator.html" data-i18n="nav.contact">Contact Us</a>
+        </nav>
+
+        <div class="header-end">
+        <a class="nav-pay" href="https://www.sampathvishwa.com/" target="_blank" rel="noopener noreferrer" data-i18n-aria="q.pay" aria-label="Pay Online">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.8" y="6.2" width="18.4" height="12.2" rx="2.4"/><path d="M2.8 10h18.4"/><path d="M15.4 15.4h3.6"/></svg>
+          <span data-i18n="q.pay">Pay Online</span>
+        </a>
+          <div class="lang" role="group" aria-label="Language">
+            <button type="button" data-lang="en" aria-label="English">EN</button>
+            <button type="button" data-lang="si" aria-label="සිංහල">සිං</button>
+            <button type="button" data-lang="ta" aria-label="தமிழ்">த</button>
+          </div>
+        </div>
+
+        <button class="burger" type="button" data-i18n-aria="nav.open" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+    </div>
+      </header>
+
+  <div class="stage">
+    <span class="blob blob-tr" aria-hidden="true"></span>
+    <span class="blob blob-ml" aria-hidden="true"></span>
+
+    <div class="frame frame-hero">
+      <div class="header-spacer" aria-hidden="true"></div>
+
+      <section class="hero" id="featured" aria-roledescription="carousel" data-i18n-aria="aria.featured" aria-label="Featured">
+        <div class="hero-shot">
+          <div class="hero-shot-media">
+            <img class="hero-scene" src="assets/scene-milk.jpg" alt="A young Sri Lankan couple in casual wear with a small milk pot overflowing">
+            <div class="hero-shot-shade" aria-hidden="true"></div>
+            <svg class="hero-wave" viewBox="0 0 1440 140" preserveAspectRatio="none" aria-hidden="true">
+              <path class="hero-wave-fill" d="M0 78C180 118 320 18 520 42c210 26 280 108 470 88 150-16 280-78 450-54v64H0V78Z"/>
+            </svg>
+          </div>
+
+          <div class="hero-titles">
+            <article class="slide is-active" data-slide data-image="assets/scene-milk.jpg" data-pop="assets/pop-milk.png" data-popw="90%" data-popr="-10%" data-popy="-30%" data-alt-key="slide1.alt" data-tagline-key="tag.home" data-pos="40% 45%">
+              <p class="eyebrow" data-i18n="slide1.eye">New beginnings</p>
+              <h1 data-i18n-html="slide1.title">Blessings that<br>overflow.</h1>
+          </article>
+            <article class="slide" data-slide data-image="assets/scene-vezel.jpg" data-pop="assets/pop-vezel.png" data-popw="62%" data-popr="4%" data-popy="-16%" data-popmax="720px" data-popmaxh="74%" data-alt-key="slide2.alt" data-tagline-key="tag.lease" data-pos="55% 48%">
+              <p class="eyebrow" data-i18n="slide2.eye">Lifestyle leasing</p>
+              <h1 data-i18n-html="slide2.title">Your journey.<br>Your way.</h1>
+          </article>
+            <article class="slide" data-slide data-image="assets/scene-family.jpg" data-pop="assets/pop-family.png" data-popw="70%" data-popr="-1%" data-popy="-24%" data-popmax="780px" data-popmaxh="94%" data-popscale="1.12" data-alt-key="slide3.alt" data-tagline-key="tag.family" data-pos="50% 42%">
+              <p class="eyebrow" data-i18n="slide3.eye">Family finance</p>
+              <h1 data-i18n-html="slide3.title">Plans that grow<br>with you.</h1>
+          </article>
+        </div>
+
+          <img class="hero-pop" src="assets/pop-milk.png" alt="">
+
+          <button class="circle-next" type="button" data-next data-i18n-aria="aria.next" aria-label="Next slide">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+
+        <div class="hero-under">
+          <div class="hero-details">
+            <div class="slide-detail is-active" data-detail>
+              <p class="lede" data-i18n-html="slide1.lede">Start the year — and every chapter after — with finance that feels close to home. <b>Believing in the future</b> begins with the right partner beside you.</p>
+              <div class="hero-actions">
+                <a class="btn btn-ink" href="#about" data-i18n="slide1.start">Get started</a>
+                <a class="btn btn-brand" href="branch-locator.html">
+                  <span data-i18n="slide1.cta">Talk to us</span>
+                  <i aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <div class="slide-detail" data-detail>
+              <p class="lede" data-i18n-html="slide2.lede">Flexible leasing for the vehicle that fits your life — clear terms, shaped around your income, with support at every turn.</p>
+              <div class="hero-actions">
+                <a class="btn btn-ink" href="leasing.html" data-i18n="slide2.start">Get started</a>
+                <a class="btn btn-brand" href="leasing.html">
+                  <span data-i18n="slide2.cta">Explore leasing</span>
+                  <i aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <div class="slide-detail" data-detail>
+              <p class="lede" data-i18n-html="slide3.lede">From first home steps to school runs and savings goals — loans and deposits built for the people you love.</p>
+              <div class="hero-actions">
+                <a class="btn btn-ink" href="#loans" data-i18n="slide3.start">Get started</a>
+                <a class="btn btn-brand" href="#loans">
+                  <span data-i18n="slide3.cta">Explore loans</span>
+                  <i aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+      <div class="hero-foot">
+        <p class="tagline"><span class="tag-bar" aria-hidden="true"></span><span class="tagline-text">A finance partner for every journey</span></p>
+
+        <div class="dots" role="tablist" data-i18n-aria="aria.slides" aria-label="Choose slide">
+          <button class="dot is-active" type="button" role="tab" data-dot="0" aria-label="Slide 1" aria-selected="true"></button>
+          <button class="dot" type="button" role="tab" data-dot="1" aria-label="Slide 2" aria-selected="false"></button>
+          <button class="dot" type="button" role="tab" data-dot="2" aria-label="Slide 3" aria-selected="false"></button>
+        </div>
+
+        <div class="pager">
+          <button class="pager-btn" type="button" data-prev data-i18n-aria="aria.prev" aria-label="Previous slide">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6 9 12l6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button class="pager-btn" type="button" data-next data-i18n-aria="aria.next" aria-label="Next slide">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <main class="path" id="path">
+    <div class="path-sky" aria-hidden="true">
+      <span class="orb orb-a"></span>
+      <span class="orb orb-b"></span>
+      <span class="orb orb-c"></span>
+      <span class="grid-fade"></span>
+      <span class="grain"></span>
+    </div>
+
+    <section class="about reveal" id="about" aria-labelledby="about-title">
+      <div class="about-stage">
+        <img class="about-bg" src="assets/about-hq-wide.jpg" alt="" data-i18n-alt="about.photoAlt" width="1600" height="900" decoding="async">
+        <div class="about-shade" aria-hidden="true"></div>
+
+        <div class="about-copy">
+          <p class="about-kicker" data-i18n="about.kicker">Who we are</p>
+          <h2 id="about-title" data-i18n-html="about.title">Finance for a <em>stronger Sri Lanka.</em></h2>
+          <p class="about-lede" data-i18n="about.body">Siyapatha Finance PLC is the largest fully owned subsidiary of Sampath Bank, licensed by the Central Bank of Sri Lanka to take deposits — leasing, gold, loans and savings, close to the people who use them.</p>
+
+          <ul class="about-pillars">
+            <li>
+              <span class="about-pillar-ico is-bank" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <circle cx="24" cy="24" r="24" fill="#E8F1FF"/>
+                  <path d="M12 20.5 24 13l12 7.5" fill="#3B82F6"/>
+                  <path d="M12 20.5 24 13l12 7.5V23H12v-2.5Z" fill="#2563EB"/>
+                  <rect x="14.5" y="23" width="4.2" height="10" rx="1" fill="#60A5FA"/>
+                  <rect x="21.9" y="23" width="4.2" height="10" rx="1" fill="#3B82F6"/>
+                  <rect x="29.3" y="23" width="4.2" height="10" rx="1" fill="#1D4ED8"/>
+                  <rect x="11" y="33.2" width="26" height="3.2" rx="1.2" fill="#1E3A8A"/>
+                  <circle cx="24" cy="18.2" r="1.6" fill="#FDBA74"/>
+                </svg>
+              </span>
+              <b data-i18n="about.pillar1">Backed by Sampath</b>
+          </li>
+          <li>
+              <span class="about-pillar-ico is-shield" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <circle cx="24" cy="24" r="24" fill="#E7F8EE"/>
+                  <path d="M24 10.5 13 15.2v8.1c0 7.1 4.5 12.4 11 14.7 6.5-2.3 11-7.6 11-14.7v-8.1L24 10.5Z" fill="#22C55E"/>
+                  <path d="M24 13.2 15.8 16.8v6.5c0 5.6 3.5 9.8 8.2 11.8 4.7-2 8.2-6.2 8.2-11.8v-6.5L24 13.2Z" fill="#4ADE80"/>
+                  <path d="m18.8 24.2 3.4 3.4 7-7" stroke="#14532D" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <b data-i18n="about.pillar2">CBSL licensed</b>
+          </li>
+          <li>
+              <span class="about-pillar-ico is-map" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <circle cx="24" cy="24" r="24" fill="#FFE8D6"/>
+                  <path d="M24 10.5c-5.4 0-9.8 4.3-9.8 9.6 0 7.2 9.8 17.4 9.8 17.4s9.8-10.2 9.8-17.4c0-5.3-4.4-9.6-9.8-9.6Z" fill="#FF6200"/>
+                  <path d="M24 12.8c-4.1 0-7.4 3.3-7.4 7.3 0 5.4 7.4 13.8 7.4 13.8s7.4-8.4 7.4-13.8c0-4-3.3-7.3-7.4-7.3Z" fill="#FF8A3D"/>
+                  <circle cx="24" cy="20" r="3.4" fill="#fff"/>
+                  <circle cx="24" cy="20" r="1.7" fill="#F97316"/>
+                </svg>
+              </span>
+              <b data-i18n="about.pillar3">Islandwide desks</b>
+          </li>
+        </ul>
+
+          <div class="about-actions">
+            <a class="about-cta" href="siyapatha-board-of-directors.html" data-i18n="about.cta">About us</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-curve" aria-hidden="true">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+          <path class="about-curve-fill" d="M0 52C200 82 400 22 640 46C900 72 1140 78 1440 44V100H0Z"/>
+          <path class="about-curve-line" d="M0 49C200 79 400 19 640 43C900 69 1140 75 1440 41V47C1140 81 900 75 640 49C400 25 200 85 0 55Z"/>
+        </svg>
+      </div>
+    </section>
+
+    <section class="products reveal" id="products" aria-labelledby="prod-title">
+      <div class="products-bleed">
+      <div class="path-inner">
+          <header class="products-head">
+            <div>
+          <p class="kicker" data-i18n="prod.kicker">Product highlights</p>
+              <h2 id="prod-title" data-i18n-html="prod.title">Products built around <em>everyday needs.</em></h2>
+            </div>
+            <p class="products-note" data-i18n="prod.note">From everyday financial needs to life's biggest ambitions, discover solutions designed to empower your journey and bring your aspirations closer to reality.</p>
+          </header>
+
+          <div class="prod-stage" data-prod-stage aria-roledescription="carousel" aria-label="Product highlights">
+            <div class="prod-track" data-prod-track>
+              <article class="prod-feature is-on" id="leasing" data-prod-slide="0">
+                <div class="prod-feature-media">
+                  <img src="assets/Leasing.jpg" alt="Customer receiving car keys in a vehicle showroom" width="960" height="540" loading="lazy" decoding="async">
+                </div>
+                <div class="prod-feature-panel">
+                  <h3 data-i18n="prod.lease">Lifestyle leasing</h3>
+                  <p class="prod-feature-body" data-i18n="prod.leaseBody">Vehicles, equipment and fleets, shaped around how you earn. Registered or unregistered.</p>
+                  <ul class="prod-meta" aria-hidden="true">
+                    <li data-i18n="prod.leaseFast">24-hr approval</li>
+                    <li data-i18n="prod.leaseTenure">Up to 7 years tenure</li>
+                  </ul>
+                  <div class="prod-actions">
+                    <button type="button" class="prod-see" data-prod-see hidden>See more</button>
+                    <a class="prod-go" href="leasing.html" data-i18n="prod.leaseCta">Explore leasing</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="prod-feature" id="gold" data-prod-slide="1" hidden>
+                <div class="prod-feature-media">
+                  <img src="assets/gold_finance.jpg" alt="Advisor presenting gold jewellery to a customer" width="960" height="540" loading="lazy" decoding="async">
+                </div>
+                <div class="prod-feature-panel">
+                  <h3 data-i18n="prod.gold">Gold financing</h3>
+                  <p class="prod-feature-body" data-i18n="prod.goldBody">We offer unmatched financial solutions through our Gold Financing products to suit your day-to-day financial needs. Giving a maximum value for your gold jewellery, ensuring the security of articles, speedy service, and safeguarding your privacy are the key points of emphasis that we are glad to offer you.</p>
+                  <ul class="prod-meta" aria-hidden="true">
+                    <li data-i18n="prod.goldLtv">Up to 80% LTV</li>
+                    <li data-i18n="prod.goldVault">Instant vault custody</li>
+                  </ul>
+                  <div class="prod-actions">
+                    <button type="button" class="prod-see" data-prod-see hidden>See more</button>
+                    <a class="prod-go" href="branch-locator.html" data-i18n="prod.explore">Explore</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="prod-feature" id="loans" data-prod-slide="2" hidden>
+                <div class="prod-feature-media">
+                  <img src="assets/Loans.jpg" alt="Customer celebrating life goals supported by flexible loans" width="960" height="540" loading="lazy" decoding="async">
+                </div>
+                <div class="prod-feature-panel">
+                  <h3 data-i18n="prod.loans">Loans</h3>
+                  <p class="prod-feature-body" data-i18n="prod.loansBody">From personal loans, auto loans, educational loans to business loans, we provide you with the funds you need via our customer-friendly loan schemes. We ensure that you receive the best rate by evaluating the profile and the creditworthiness. We offer you the financial freedom you want with low-interest flexible payment plans.</p>
+                  <ul class="prod-meta" aria-hidden="true">
+                    <li data-i18n="prod.loansTerms">Custom terms</li>
+                    <li data-i18n="prod.loansFees">Straightforward fees</li>
+                  </ul>
+                  <div class="prod-actions">
+                    <button type="button" class="prod-see" data-prod-see hidden>See more</button>
+                    <a class="prod-go" href="branch-locator.html" data-i18n="prod.explore">Explore</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="prod-feature" id="factoring" data-prod-slide="3" hidden>
+                <div class="prod-feature-media">
+                  <img src="assets/Factoring.jpg" alt="Business advisor reviewing working capital documents with a client" width="960" height="540" loading="lazy" decoding="async">
+                </div>
+                <div class="prod-feature-panel">
+                  <h3 data-i18n="prod.factor">Factoring</h3>
+                  <p class="prod-feature-body" data-i18n="prod.factorBody">Factoring is a working capital solution specially designed for businesses and organizations to continue business operations on credit terms. Our working capital solutions are a fast way to collect money for the products delivered and services offered. At Siyapatha Finance, we ensure that you increase or maintain a positive cash flow within your business during challenging times.</p>
+                  <ul class="prod-meta" aria-hidden="true">
+                    <li data-i18n="prod.factorCap">Working capital</li>
+                    <li data-i18n="prod.factorFast">Same-day liquidity</li>
+                  </ul>
+                  <div class="prod-actions">
+                    <button type="button" class="prod-see" data-prod-see hidden>See more</button>
+                    <a class="prod-go" href="branch-locator.html" data-i18n="prod.explore">Explore</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="prod-feature" id="deposits" data-prod-slide="4" hidden>
+                <div class="prod-feature-media">
+                  <img src="assets/Fixed_Deposit.jpg" alt="Customer planning future goals with fixed deposit returns" width="960" height="540" loading="lazy" decoding="async">
+                </div>
+                <div class="prod-feature-panel">
+                  <h3 data-i18n="prod.deposits">Fixed Deposits</h3>
+                  <p class="prod-feature-body" data-i18n="prod.depositsBody">Siyapatha Finance Deposits are guaranteed assurance of Stability, Service, and Benefits for your hard-earned money; the wind beneath your wings for you and your dreams. Be it an emergency, local or foreign tours, children’s higher education, purchasing of your new house, property, or your dream apartment, Siyapatha Finance Deposits will enable you to invest your money and obtain a return on the capital to fulfil your dreams.</p>
+                  <ul class="prod-meta" aria-hidden="true">
+                    <li data-i18n="prod.depRate">Competitive rates</li>
+                    <li data-i18n="prod.depInsured">Insured up to Rs. 1.1M</li>
+                  </ul>
+                  <div class="prod-actions">
+                    <button type="button" class="prod-see" data-prod-see hidden>See more</button>
+                    <a class="prod-go" href="#rates" data-i18n="prod.explore">Explore</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="prod-feature" id="savings" data-prod-slide="5" hidden>
+                <div class="prod-feature-media">
+                  <img src="assets/Savings.jpg" alt="Family growing their savings with stacked coins" width="960" height="540" loading="lazy" decoding="async">
+                </div>
+                <div class="prod-feature-panel">
+                  <h3 data-i18n="prod.savings">Siyapatha Savings Accounts</h3>
+                  <p class="prod-feature-body" data-i18n="prod.savingsBody">As the fully owned subsidiary of Sampath Bank, we offer you a savings account facility with many beneficial features that allows you to grow your savings over time. The Siyapatha Savings account empowers you financially and gives you the confidence to be financially independent.</p>
+                  <ul class="prod-meta" aria-hidden="true">
+                    <li data-i18n="prod.savingsGrow">Grow over time</li>
+                    <li data-i18n="prod.savingsBank">Sampath Bank subsidiary</li>
+                  </ul>
+                  <div class="prod-actions">
+                    <button type="button" class="prod-see" data-prod-see hidden>See more</button>
+                    <a class="prod-go" href="siyapatha-savings.html" data-i18n="prod.explore">Explore</a>
+        </div>
+                </div>
+              </article>
+      </div>
+
+            <div class="prod-index" role="tablist" aria-label="Products" data-prod-index>
+              <button type="button" class="prod-tile is-on" role="tab" aria-selected="true" data-prod-tab="0">
+                <div class="prod-tile-media">
+                  <img src="assets/Leasing.jpg" alt="" width="640" height="480" loading="lazy" decoding="async">
+        </div>
+                <div class="prod-tile-copy">
+          <h3 data-i18n="prod.lease">Lifestyle leasing</h3>
+          <p data-i18n="prod.leaseBody">Vehicles, equipment and fleets, shaped around how you earn. Registered or unregistered.</p>
+        </div>
+              </button>
+              <button type="button" class="prod-tile" role="tab" aria-selected="false" data-prod-tab="1">
+                <div class="prod-tile-media">
+                  <img src="assets/gold_finance.jpg" alt="" width="640" height="480" loading="lazy" decoding="async">
+                </div>
+                <div class="prod-tile-copy">
+                  <h3 data-i18n="prod.gold">Gold financing</h3>
+                  <p data-i18n="prod.goldTagline">Instant liquidity backed by your gold assets</p>
+                </div>
+              </button>
+              <button type="button" class="prod-tile" role="tab" aria-selected="false" data-prod-tab="2">
+                <div class="prod-tile-media">
+                  <img src="assets/Loans.jpg" alt="" width="640" height="480" loading="lazy" decoding="async">
+                </div>
+                <div class="prod-tile-copy">
+                  <h3 data-i18n="prod.loans">Loans</h3>
+                  <p data-i18n="prod.loansTagline">Personal milestones and business growth</p>
+                </div>
+              </button>
+              <button type="button" class="prod-tile" role="tab" aria-selected="false" data-prod-tab="3">
+                <div class="prod-tile-media">
+                  <img src="assets/Factoring.jpg" alt="" width="640" height="480" loading="lazy" decoding="async">
+                </div>
+                <div class="prod-tile-copy">
+                  <h3 data-i18n="prod.factor">Factoring</h3>
+                  <p data-i18n="prod.factorSub">Turn outstanding invoices into immediate working cash</p>
+                </div>
+              </button>
+              <button type="button" class="prod-tile" role="tab" aria-selected="false" data-prod-tab="4">
+                <div class="prod-tile-media">
+                  <img src="assets/Fixed_Deposit.jpg" alt="" width="640" height="480" loading="lazy" decoding="async">
+                </div>
+                <div class="prod-tile-copy">
+                  <h3 data-i18n="prod.deposits">Fixed Deposits</h3>
+                  <p data-i18n="prod.depTagline">Published yields with insured eligible balances</p>
+                </div>
+              </button>
+              <button type="button" class="prod-tile" role="tab" aria-selected="false" data-prod-tab="5">
+                <div class="prod-tile-media">
+                  <img src="assets/Savings.jpg" alt="" width="640" height="480" loading="lazy" decoding="async">
+                </div>
+                <div class="prod-tile-copy">
+                  <h3 data-i18n="prod.savings">Siyapatha Savings Accounts</h3>
+                  <p data-i18n="prod.savingsTagline">Grow savings with confidence over time</p>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rates reveal" id="rates" aria-labelledby="rates-title">
+      <div class="rates-decor" aria-hidden="true">
+        <img src="assets/rates-decor-bg.jpg" alt="">
+      </div>
+      <div class="rates-decor-veil" aria-hidden="true"></div>
+      <div class="path-inner rates-inner">
+        <div class="rates-head">
+            <div>
+            <h2 id="rates-title" data-i18n="rates.title">Current Rates</h2>
+            <p class="rates-note" data-i18n="rates.note">Our most popular rates, all in one clear view.</p>
+          </div>
+          <div class="rates-asof">
+            <span class="rates-pulse" aria-hidden="true"></span>
+            <span data-i18n="rates.asof">Fixed deposit rates effective</span>
+            <b>17 Aug 2026</b>
+          </div>
+        </div>
+
+        <div class="rates-grid" data-rates-grid>
+          <a class="rates-item is-hot rates-c3" href="https://www.siyapatha.lk/fixed-deposits/" target="_blank" rel="noopener noreferrer">
+            <div class="rates-item-top">
+              <span class="rates-chip"><i aria-hidden="true">▣</i><span data-i18n="rates.chip.fd12">Fixed Deposit · 12 Months</span></span>
+              <span class="rates-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="rates-big"><span data-count="10.00">0.00</span>%<small>p.a.</small></div>
+            <p class="rates-item-note" data-i18n="rates.item.fd12">Paid at maturity · General public</p>
+          </a>
+
+          <a class="rates-item rates-c3" href="https://www.siyapatha.lk/fixed-deposits/" target="_blank" rel="noopener noreferrer">
+            <div class="rates-item-top">
+              <span class="rates-chip is-amber"><i aria-hidden="true">◷</i><span data-i18n="rates.chip.fd60">FD · 60 Months</span></span>
+              <span class="rates-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="rates-bottom">
+            <div>
+                <p class="rates-lbl" data-i18n="rates.lbl.long">Long-term FD</p>
+                <div class="rates-big"><span data-count="13.00">0.00</span>%<small>p.a.</small></div>
+              </div>
+              <div class="rates-bars" aria-hidden="true">
+                <span style="--h:30%"></span><span style="--h:45%"></span><span style="--h:50%"></span><span style="--h:55%"></span><span style="--h:65%"></span><span style="--h:72%"></span><span style="--h:88%"></span><span class="on" style="--h:100%"></span>
+              </div>
+            </div>
+          </a>
+
+          <div class="rates-visual rates-span2" aria-hidden="true">
+            <div class="rates-visual-orb"></div>
+            <p class="rates-visual-kicker" data-i18n="rates.visualKicker">Tenure climb</p>
+            <h3 data-i18n="rates.visualTitle">Returns grow with time</h3>
+            <div class="rates-ladder">
+              <div class="rates-ladder-row" style="--w:74%; --d:0s">
+                <span class="rates-ladder-meta"><b>12</b> mo</span>
+                <div class="rates-ladder-track"><i></i></div>
+                <span class="rates-ladder-val"><span data-count="10.00">0.00</span>%</span>
+              </div>
+              <div class="rates-ladder-row" style="--w:92%; --d:0.12s">
+                <span class="rates-ladder-meta"><b>60</b> mo</span>
+                <div class="rates-ladder-track"><i></i></div>
+                <span class="rates-ladder-val"><span data-count="13.00">0.00</span>%</span>
+              </div>
+              <div class="rates-ladder-row is-peak" style="--w:100%; --d:0.24s">
+                <span class="rates-ladder-meta"><b>60</b> mo+</span>
+                <div class="rates-ladder-track"><i></i></div>
+                <span class="rates-ladder-val"><span data-count="13.50">0.00</span>%</span>
+              </div>
+            </div>
+            <p class="rates-visual-note" data-i18n="rates.visualNote">Senior citizens unlock the top rung.</p>
+          </div>
+
+          <div class="rates-item is-peak rates-span2" role="group" aria-label="Highest fixed deposit rate">
+            <span class="rates-badge" data-i18n="rates.badge">Highest FD rate</span>
+            <div>
+              <div class="rates-peak-num"><span data-count="13.50">0.00</span><small>%</small></div>
+              <p class="rates-peak-cap" data-i18n="rates.item.senior">p.a. · Senior citizens · 60 months</p>
+            </div>
+            <svg class="rates-gauge" viewBox="0 0 220 120" aria-hidden="true">
+              <path d="M20 110 A90 90 0 0 1 200 110" fill="none" stroke="#e6ebf2" stroke-width="16" stroke-linecap="round"/>
+              <path class="rates-arc" pathLength="100" d="M20 110 A90 90 0 0 1 200 110" fill="none" stroke="#ff6200" stroke-width="16" stroke-linecap="round"/>
+              <text x="110" y="104" fill="#5c6673" font-size="13" font-weight="600" text-anchor="middle">Maturity payout</text>
+            </svg>
+            <p class="rates-peak-foot" data-i18n="rates.peakFoot">Rates per annum · conditions apply</p>
+          </div>
+
+          <a class="rates-item rates-c3" href="siyapatha-savings.html">
+            <div class="rates-item-top">
+              <span class="rates-chip is-sky"><i aria-hidden="true">◈</i><span data-i18n="rates.chip.saver">Siyapatha Saver</span></span>
+              <span class="rates-arrow" aria-hidden="true">↗</span>
+            </div>
+            <p class="rates-lbl" data-i18n="rates.lbl.saver">General savings</p>
+            <div class="rates-big"><span data-count="4.00">0.00</span>%<small>p.a.</small></div>
+            <p class="rates-item-note">AER 4.07%</p>
+          </a>
+
+          <a class="rates-item rates-c3" href="siyapatha-savings.html">
+            <div class="rates-item-top">
+              <span class="rates-chip is-lilac"><i aria-hidden="true">✦</i><span data-i18n="rates.chip.kirula">Kirula</span></span>
+              <span class="rates-arrow" aria-hidden="true">↗</span>
+            </div>
+            <p class="rates-lbl" data-i18n="rates.lbl.kirula">Children’s savings · up to 18 yrs</p>
+            <div class="rates-big"><span data-count="5.00">0.00</span>%<small>p.a.</small></div>
+            <p class="rates-item-note">AER 5.12%</p>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="stories reveal" id="stories" aria-labelledby="stories-title">
+      <div class="path-inner stories-head">
+          <p class="kicker" data-i18n="stories.kicker">Success stories</p>
+        <h2 id="stories-title" data-i18n="stories.title">Trusted by customers across Sri Lanka</h2>
+        <p class="lede" data-i18n="stories.lead">Real people sharing how Siyapatha helped them lease, save, borrow, and move forward.</p>
+      </div>
+
+      <div class="stories-marquee" aria-label="Customer testimonials">
+        <div class="stories-track">
+          <article class="t-card">
+            <div class="t-author">
+              <img class="t-avatar" src="assets/review-tharindu.jpg" alt="">
+              <div>
+                <strong>Tharindu Perera</strong>
+                <span data-i18n="stories.role.gold">Gold Financing</span>
+              </div>
+            </div>
+            <p data-i18n="stories.q1">Siyapatha Finance made it easy for me to access funds when I needed it most.</p>
+          </article>
+          <article class="t-card">
+            <div class="t-author">
+              <img class="t-avatar" src="assets/review-dilini.jpg" alt="">
+              <div>
+                <strong>Dilini Fernando</strong>
+                <span data-i18n="stories.role.lease">Leasing</span>
+          </div>
+        </div>
+            <p data-i18n="stories.q2">The leasing process was clear, fast and shaped around how I actually use the vehicle.</p>
+          </article>
+          <article class="t-card">
+            <div class="t-author">
+              <img class="t-avatar" src="assets/review-nuwan.jpg" alt="">
+              <div>
+                <strong>Nuwan Jayasinghe</strong>
+                <span data-i18n="stories.role.loans">Loans</span>
+              </div>
+            </div>
+            <p data-i18n="stories.q3">A repayment plan I can live with, and a team that stayed with me at every step.</p>
+          </article>
+          <article class="t-card">
+            <div class="t-author">
+              <img class="t-avatar" src="assets/review-shanika.jpg" alt="">
+              <div>
+                <strong>Shanika Fernando</strong>
+                <span data-i18n="stories.role.factor">Factoring</span>
+              </div>
+            </div>
+            <p data-i18n="stories.q4">Cash flow stopped being a monthly scramble — factoring gave my business room to breathe.</p>
+          </article>
+          <article class="t-card" aria-hidden="true">
+            <div class="t-author">
+              <img class="t-avatar" src="assets/review-tharindu.jpg" alt="">
+              <div>
+                <strong>Tharindu Perera</strong>
+                <span data-i18n="stories.role.gold">Gold Financing</span>
+              </div>
+            </div>
+            <p data-i18n="stories.q1">Siyapatha Finance made it easy for me to access funds when I needed it most.</p>
+          </article>
+          <article class="t-card" aria-hidden="true">
+            <div class="t-author">
+              <img class="t-avatar" src="assets/review-dilini.jpg" alt="">
+              <div>
+                <strong>Dilini Fernando</strong>
+                <span data-i18n="stories.role.lease">Leasing</span>
+              </div>
+            </div>
+            <p data-i18n="stories.q2">The leasing process was clear, fast and shaped around how I actually use the vehicle.</p>
+          </article>
+          <article class="t-card" aria-hidden="true">
+            <div class="t-author">
+              <img class="t-avatar" src="assets/review-nuwan.jpg" alt="">
+              <div>
+                <strong>Nuwan Jayasinghe</strong>
+                <span data-i18n="stories.role.loans">Loans</span>
+              </div>
+            </div>
+            <p data-i18n="stories.q3">A repayment plan I can live with, and a team that stayed with me at every step.</p>
+          </article>
+          <article class="t-card" aria-hidden="true">
+            <div class="t-author">
+              <img class="t-avatar" src="assets/review-shanika.jpg" alt="">
+              <div>
+                <strong>Shanika Fernando</strong>
+                <span data-i18n="stories.role.factor">Factoring</span>
+              </div>
+            </div>
+            <p data-i18n="stories.q4">Cash flow stopped being a monthly scramble — factoring gave my business room to breathe.</p>
+          </article>
+        </div>
+        <div class="stories-fade stories-fade-l" aria-hidden="true"></div>
+        <div class="stories-fade stories-fade-r" aria-hidden="true"></div>
+      </div>
+
+      <div class="path-inner stories-stats">
+        <div>
+          <strong data-i18n="stories.stat1">Trusted by 150,000+</strong>
+          <span data-i18n="stories.stat1Note">Customers across Sri Lanka</span>
+        </div>
+        <div>
+          <strong data-i18n="stories.stat2">Over 30 years</strong>
+          <span data-i18n="stories.stat2Note">Of finance expertise</span>
+        </div>
+        <div>
+          <strong data-i18n="stories.stat3">Nationwide support</strong>
+          <span data-i18n="stories.stat3Note">Branches islandwide</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="news reveal" id="news" aria-labelledby="news-title">
+      <div class="path-inner news-head">
+        <div>
+          <p class="kicker" data-i18n="news.kicker">Latest news</p>
+          <h2 id="news-title" data-i18n="news.title">Siyapatha Spotlight</h2>
+        </div>
+      </div>
+
+      <div class="nc-shell" data-news-coverflow aria-roledescription="carousel" data-i18n-aria="news.carousel" aria-label="News and events">
+        <div class="nc-atmosphere" aria-hidden="true"></div>
+        <div class="nc-active-info">
+          <h3 data-nc-title></h3>
+          <p data-nc-body></p>
+        </div>
+        <div class="nc-stage" data-nc-stage>
+          <div class="nc-floor" aria-hidden="true"></div>
+          <div data-nc-cards></div>
+        </div>
+        <div class="nc-bottom">
+          <div class="nc-dock" role="group" data-i18n-aria="news.controls" aria-label="News controls">
+            <div class="nc-transport">
+              <button type="button" data-nc-prev data-i18n-aria="news.prev" aria-label="Previous">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6 9 12l6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <button type="button" data-nc-next data-i18n-aria="news.next" aria-label="Next">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <p class="nc-live gc-sr-only" aria-live="polite" aria-atomic="true" data-nc-live></p>
+      </div>
+    </section>
+
+    <section class="branch-cta reveal" id="branches" aria-labelledby="branch-cta-title">
+      <div class="branch-cta-bleed">
+        <div class="branch-cta-media" aria-hidden="true">
+          <img src="assets/branch-cta-bg.png" alt="" width="1400" height="900" decoding="async">
+        </div>
+        <div class="path-inner branch-cta-inner">
+          <p class="branch-kicker" data-i18n="branch.kicker">Branch locator</p>
+          <h2 id="branch-cta-title" data-i18n="branch.title">Find a branch near you.</h2>
+          <p class="branch-cta-lede" data-i18n="branch.ctaLede">Search by town, filter by region, and preview each desk on the map before you visit.</p>
+          <a class="btn btn-brand branch-cta-go" href="branch-locator.html">
+            <span data-i18n="branch.cta">Open branch locator</span>
+            <i aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot reveal is-in" data-reveal-footer>
+    <div class="path-inner site-foot-grid">
+      <div class="foot-brand">
+        <a class="foot-logo" href="index.html" aria-label="Siyapatha Finance, home">
+          <img src="assets/logo.png" alt="Siyapatha Finance">
+        </a>
+        <p class="foot-group" data-i18n="foot.group">Finance Company of Sampath Bank Group</p>
+        <p class="foot-blurb" data-i18n="foot.blurb">Your trusted one-stop finance company, licensed and regulated by the Central Bank of Sri Lanka (CBSL). Siyapatha Finance is geared to be a trusted financial partner for life.</p>
+        <div class="foot-care">
+          <span class="foot-care-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path fill="currentColor" d="M12 3.2A7.3 7.3 0 0 0 4.7 10.5V13a2.3 2.3 0 0 0 2.3 2.3h1.1V11H7a.8.8 0 0 1-.8-.8v-.2A5.8 5.8 0 0 1 12 4.7a5.8 5.8 0 0 1 5.8 5.3v.2a.8.8 0 0 1-.8.8h-1.1v4.3h1.1A2.3 2.3 0 0 0 19.3 13v-2.5A7.3 7.3 0 0 0 12 3.2Z"/>
+              <path fill="currentColor" d="M9.4 17.6a.75.75 0 0 1 .75-.75h1.1v-.7a.75.75 0 0 1 1.5 0v.7h1.1a.75.75 0 0 1 0 1.5h-3.7a.75.75 0 0 1-.75-.75Z"/>
+              <circle cx="12" cy="10.4" r="1.85" fill="currentColor"/>
+            </svg>
+          </span>
+          <div>
+            <strong data-i18n="foot.care">Customer Relations</strong>
+            <a href="tel:+94117581333">0117 581 333</a>
+            <span data-i18n="foot.careHours">Monday to Friday · 8.30 a.m. to 4.30 p.m.</span>
+            <a class="foot-mail" href="mailto:customerrelations@siyapatha.lk">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.2" y="5.5" width="17.6" height="13" rx="2"/><path d="m4.2 7.2 7.8 6.2 7.8-6.2"/></svg>
+              customerrelations@siyapatha.lk
+            </a>
+          </div>
+        </div>
+        <p class="foot-award" data-i18n="foot.award">Great Place to Work · Sri Lanka 2021</p>
+      </div>
+
+      <div class="foot-col">
+        <h3 data-i18n="foot.explore">Explore</h3>
+        <ul>
+          <li><a href="#about" data-i18n="foot.profile">Corporate Profile</a></li>
+          <li><a href="#rating" data-i18n="nav.rating">Credit Rating</a></li>
+          <li><a href="#kpi" data-i18n="nav.kpi">Financial Information &amp; KPI</a></li>
+          <li><a href="tender/index.html" data-i18n="nav.vehicles">Vehicles for Sale</a></li>
+          <li><a href="#investor" data-i18n="nav.investor">Investor Relations</a></li>
+          <li><a href="#sustainability" data-i18n="nav.sustainability">Sustainability</a></li>
+          <li><a href="#careers" data-i18n="nav.careers">Careers</a></li>
+          <li><a href="branch-locator.html" data-i18n="nav.branches">Branch Network</a></li>
+          <li><a href="https://www.sampathvishwa.com/" target="_blank" rel="noopener noreferrer" data-i18n="foot.payments">Payment Facility Methods</a></li>
+        </ul>
+        <a class="foot-notice" href="#news" data-i18n="foot.notices">Notices</a>
+      </div>
+
+      <div class="foot-col">
+        <h3 data-i18n="foot.services">Services</h3>
+        <ul>
+          <li><a href="leasing.html" data-i18n="nav.leasing">Leasing</a></li>
+          <li><a href="#gold" data-i18n="nav.gold">Gold Financing</a></li>
+          <li><a href="#loans" data-i18n="nav.loans">Loans</a></li>
+          <li><a href="#factoring" data-i18n="nav.factoring">Factoring</a></li>
+          <li><a href="fixed-deposit-calculator.html" data-i18n="nav.deposits">Fixed Deposits</a></li>
+          <li><a href="siyapatha-savings.html" data-i18n="nav.savings">Savings</a></li>
+        </ul>
+        <div class="foot-hours">
+          <h4 data-i18n="foot.hours">Business Hours</h4>
+          <p><strong data-i18n="foot.hq">Head Office</strong><span data-i18n="foot.hoursVal">Monday to Friday · 8.30 a.m. to 4.30 p.m.</span></p>
+          <p><strong data-i18n="foot.branchHrs">Branches</strong><span data-i18n="foot.hoursVal">Monday to Friday · 8.30 a.m. to 4.30 p.m.</span></p>
+        </div>
+      </div>
+
+      <div class="foot-network">
+        <h3 data-i18n="foot.network">Islandwide Network</h3>
+        <p data-i18n="foot.networkLede">Branches across Sri Lanka — find a desk near you.</p>
+        <a class="foot-map-cta" href="branch-locator.html" data-i18n="foot.findBranch">Find a branch near you</a>
+        <p class="foot-addr" data-i18n="foot.addr">Siyapatha Tower, 111, Dudley Senanayake Mawatha, Colombo 08</p>
+        <p class="foot-care-line"><a href="tel:+94117581333">0117 581 333</a></p>
+      </div>
+    </div>
+
+    <div class="site-foot-bar">
+      <div class="path-inner site-foot-bar-inner">
+        <p data-i18n="foot.copy">© 2026 Siyapatha Finance PLC. All Rights Reserved.</p>
+        <p class="foot-credit">
+          <span data-i18n="foot.solution">Solution by</span>
+          <a href="https://www.affno.com/" target="_blank" rel="noopener noreferrer">Affno</a>
+        </p>
+        <div class="foot-social" aria-label="Social">
+          <a href="https://www.facebook.com/siyapathafinance" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14.2 8.4V6.9c0-.7.5-1.1 1.2-1.1h1.4V3h-2.3c-2.4 0-3.8 1.6-3.8 3.9v1.5H8.6V11h2.1v10h3.5V11h2.4l.4-2.6h-2.8Z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/siyapathafinance" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 7.4A4.6 4.6 0 1 0 16.6 12 4.6 4.6 0 0 0 12 7.4Zm0 7.6A3 3 0 1 1 15 12a3 3 0 0 1-3 3Zm5.8-8.8a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1ZM19.4 5.5A4.7 4.7 0 0 0 16 3.1 9.2 9.2 0 0 0 12 2.6a9.2 9.2 0 0 0-4 .5A4.7 4.7 0 0 0 4.6 5.5 9.2 9.2 0 0 0 4.1 9.5v5a9.2 9.2 0 0 0 .5 4A4.7 4.7 0 0 0 8 21.4a9.2 9.2 0 0 0 4 .5 9.2 9.2 0 0 0 4-.5 4.7 4.7 0 0 0 3.4-2.9 9.2 9.2 0 0 0 .5-4v-5a9.2 9.2 0 0 0-.5-4ZM17.8 18a3.1 3.1 0 0 1-1.8 1.8 7.4 7.4 0 0 1-4 .4 7.4 7.4 0 0 1-4-.4A3.1 3.1 0 0 1 6.2 18a7.4 7.4 0 0 1-.4-4v-5a7.4 7.4 0 0 1 .4-4A3.1 3.1 0 0 1 8 3.2a7.4 7.4 0 0 1 4-.4 7.4 7.4 0 0 1 4 .4A3.1 3.1 0 0 1 17.8 6a7.4 7.4 0 0 1 .4 4v5a7.4 7.4 0 0 1-.4 3Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/siyapatha-finance" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.4 9.2H3.6V20h2.8V9.2ZM5 4a1.7 1.7 0 1 0 0 3.4A1.7 1.7 0 0 0 5 4Zm15.4 6.4c-1.5 0-2.5.7-3 1.4V9.2h-2.8c0 1.3.1 10.8.1 10.8h2.8v-6c0-.3 0-.7.1-1 .3-.7.9-1.5 2-1.5 1.4 0 2 1.1 2 2.7V20H24v-6.4c0-3.2-1.7-4.8-4.6-4.8Z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@siyapathafinance" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.6 7.8a2.6 2.6 0 0 0-1.8-1.9C18.2 5.5 12 5.5 12 5.5s-6.2 0-7.8.4A2.6 2.6 0 0 0 2.4 7.8 27 27 0 0 0 2 12a27 27 0 0 0 .4 4.2 2.6 2.6 0 0 0 1.8 1.9c1.6.4 7.8.4 7.8.4s6.2 0 7.8-.4a2.6 2.6 0 0 0 1.8-1.9A27 27 0 0 0 22 12a27 27 0 0 0-.4-4.2ZM10 15.2V8.8L15.5 12 10 15.2Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <nav class="quick-float" aria-label="Quick links">
+    <a class="qf-btn is-on" href="https://www.sampathvishwa.com/" target="_blank" rel="noopener noreferrer" data-i18n-aria="q.pay" aria-label="Pay Online">
+      <span class="qf-ico" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><rect x="2.8" y="6.2" width="18.4" height="12.2" rx="2.4"/><path d="M2.8 10h18.4"/><path d="M15.4 15.4h3.6"/><rect x="6" y="14.2" width="3.6" height="2.4" rx="0.5"/></svg>
+      </span>
+      <span class="qf-tip" data-i18n="q.pay">Pay Online</span>
+    </a>
+    <a class="qf-btn" href="branch-locator.html" data-i18n-aria="q.branches" aria-label="Find a branch">
+      <span class="qf-ico" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.2s6.6-5.2 6.6-10.6a6.6 6.6 0 1 0-13.2 0c0 5.4 6.6 10.6 6.6 10.6Z"/><circle cx="12" cy="10.6" r="2.15"/></svg>
+      </span>
+      <span class="qf-tip" data-i18n="q.branches">Find a branch</span>
+    </a>
+    <a class="qf-btn" href="#rates" data-i18n-aria="q.rates" aria-label="Rates snapshot">
+      <span class="qf-ico" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19V12"/><path d="M9.2 19V9.5"/><path d="M13.4 19V7.2"/><path d="M17.6 19V5.5"/><path d="m14.6 4.8 1.5 1.5 2.9-3.2"/></svg>
+      </span>
+      <span class="qf-tip" data-i18n="q.rates">Rates snapshot</span>
+    </a>
+    <a class="qf-btn" href="fixed-deposit-calculator.html" data-i18n-aria="q.deposits" aria-label="Fixed deposits">
+      <span class="qf-ico" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h16"/><path d="M6.2 10v8.8"/><path d="M10 10v8.8"/><path d="M14 10v8.8"/><path d="M17.8 10v8.8"/><path d="M3.2 18.8h17.6"/><path d="M12 4.1 3.6 9.4h16.8L12 4.1Z"/></svg>
+      </span>
+      <span class="qf-tip" data-i18n="q.deposits">Fixed deposits</span>
+    </a>
+    <a class="qf-btn" href="tender/index.html" data-i18n-aria="q.tenders" aria-label="Vehicle tenders">
+      <span class="qf-ico" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M7.4 11.4 9.1 8A1.8 1.8 0 0 1 10.6 7.1h2.8A1.8 1.8 0 0 1 14.9 8l1.7 3.4"/><path d="M5.2 13.4h13.6l-1-2.6A2 2 0 0 0 15.9 9.5H8.1a2 2 0 0 0-1.9 1.3l-1 2.6Z"/><circle cx="8.2" cy="17.5" r="1.35"/><circle cx="15.8" cy="17.5" r="1.35"/><path d="M9.6 17.5h4.8"/><path d="M6.8 13.4v2"/><path d="M17.2 13.4v2"/></svg>
+      </span>
+      <span class="qf-tip" data-i18n="q.tenders">Vehicle tenders</span>
+    </a>
+  </nav>
+
+  <div class="chat-float" aria-label="Chat options">
+    <a
+      class="chat-fab chat-fab-wa"
+      href="https://wa.me/94777605605"
+      target="_blank"
+      rel="noopener noreferrer"
+      data-i18n-aria="chat.wa"
+      aria-label="WhatsApp chat"
+    >
+      <span class="chat-fab-pulse" aria-hidden="true"></span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 3C7.31 3 3.48 6.78 3.48 11.45c0 1.49.4 2.94 1.16 4.22L3.4 21l5.48-1.2a8.7 8.7 0 0 0 3.16.59h.01c4.73 0 8.56-3.78 8.56-8.45C20.6 6.78 16.77 3 12.04 3Zm4.9 11.94c-.2.57-1.17 1.09-1.63 1.16-.42.06-.95.09-1.53-.1-.35-.11-.8-.26-1.38-.51-2.43-1.05-4.01-3.5-4.13-3.66-.12-.17-.98-1.3-.98-2.48 0-1.18.62-1.76.84-2 .22-.24.48-.3.64-.3h.46c.15 0 .34-.06.53.4.2.48.68 1.66.74 1.78.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.24.24-.1.47.14.23.62 1.02 1.33 1.65.92.82 1.69 1.07 1.93 1.19.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.58-.14 1.15Z"/></svg>
+      <span class="chat-fab-tip" data-i18n="chat.waTip">Message Us</span>
+    </a>
+    <button
+      class="chat-fab chat-fab-ai"
+      type="button"
+      aria-expanded="false"
+      aria-controls="ai-chat-panel"
+      data-chat-ai
+      data-i18n-aria="chat.ai"
+      aria-label="AI chatbot"
+    >
+      <span class="chat-fab-pulse" aria-hidden="true"></span>
+      <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5.2 16.8 4 20l3.4-1.1"/>
+        <path d="M8.2 17.8A7.4 7.4 0 1 0 6.3 15"/>
+        <circle cx="9.2" cy="11.2" r="0.9" fill="currentColor" stroke="none"/>
+        <circle cx="12" cy="11.2" r="0.9" fill="currentColor" stroke="none"/>
+        <circle cx="14.8" cy="11.2" r="0.9" fill="currentColor" stroke="none"/>
+      </svg>
+      <span class="chat-fab-tip" data-i18n="chat.aiTip">Ask Siyapatha</span>
+    </button>
+  </div>
+
+  <div class="ai-chat" id="ai-chat-panel" hidden role="dialog" aria-modal="false" aria-labelledby="ai-chat-title">
+    <div class="ai-chat-head">
+      <div>
+        <strong id="ai-chat-title" data-i18n="chat.aiTitle">Siyapatha Assistant</strong>
+        <span data-i18n="chat.aiStatus">Online · demo</span>
+      </div>
+      <button type="button" class="ai-chat-x" data-chat-close data-i18n-aria="a11y.close" aria-label="Close">×</button>
+    </div>
+    <div class="ai-chat-body" data-chat-log>
+      <p class="ai-bubble" data-i18n="chat.aiHello">Hi — I can help with leasing, deposits, branches, and rates. What would you like to know?</p>
+    </div>
+    <form class="ai-chat-form" data-chat-form>
+      <label class="gc-sr-only" for="ai-chat-input" data-i18n="chat.aiAsk">Ask a question</label>
+      <input id="ai-chat-input" name="q" type="text" autocomplete="off" data-i18n-placeholder="chat.aiPlaceholder" placeholder="Ask about leasing, rates, or branches…">
+      <button type="submit" data-i18n-aria="chat.aiSend" aria-label="Send">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.4 11.2 20.2 3.6a.8.8 0 0 1 1.1 1L14 20.4a.9.9 0 0 1-1.6.1l-2.6-5.5-5.5-2.6a.9.9 0 0 1 .1-1.6Z"/></svg>
+      </button>
+    </form>
+  </div>
+
+  <button class="a11y-fab" type="button" aria-expanded="false" aria-controls="a11y-panel" data-i18n-aria="a11y.label" aria-label="Accessibility">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="4.5" r="2" fill="currentColor"/><path fill="currentColor" d="M4 9.2h16v1.8h-6.2V20h-1.8v-4.2h-1.9V20H8.3v-9H4V9.2Z"/></svg>
+  </button>
+  <div class="a11y-panel" id="a11y-panel" hidden role="dialog" aria-modal="false" data-i18n-aria="a11y.label" aria-label="Accessibility">
+    <div class="a11y-head">
+      <strong data-i18n="a11y.label">Accessibility</strong>
+      <button type="button" class="a11y-x" data-a11y-close data-i18n-aria="a11y.close" aria-label="Close">×</button>
+    </div>
+    <p data-i18n="a11y.text">Text size</p>
+    <div class="seg">
+      <button type="button" data-text="sm" data-i18n-aria="a11y.smaller" aria-label="Smaller text">A−</button>
+      <button type="button" data-text="md" class="is-on">A</button>
+      <button type="button" data-text="lg" data-i18n-aria="a11y.larger" aria-label="Larger text">A+</button>
+    </div>
+    <label class="check"><input type="checkbox" data-a11y="contrast"> <span data-i18n="a11y.contrast">Higher contrast</span></label>
+    <label class="check"><input type="checkbox" data-a11y="links"> <span data-i18n="a11y.links">Underline links</span></label>
+    <label class="check"><input type="checkbox" data-a11y="motion"> <span data-i18n="a11y.motion">Pause motion</span></label>
+    <button type="button" class="a11y-reset" data-a11y-reset data-i18n="a11y.reset">Reset</button>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/site-chrome.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/news-coverflow.js"></script>
+</body>
+</html>

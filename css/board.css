@@ -1,0 +1,301 @@
+/* Board of Directors — interactive layer on top of page-local styles */
+
+.board-page {
+  --board-orange: #ff6200;
+  background:
+    radial-gradient(ellipse 50% 40% at 8% 18%, rgba(255, 98, 0, 0.08), transparent 55%),
+    radial-gradient(ellipse 40% 35% at 92% 72%, rgba(255, 140, 60, 0.07), transparent 50%),
+    linear-gradient(180deg, #f7f8fb 0%, #f2f4f8 45%, #eef1f6 100%);
+}
+.board-page .site-foot {
+  position: relative;
+  z-index: 2;
+  margin-top: 40px;
+}
+
+.board-atmosphere {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.board-atmosphere .orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(48px);
+  opacity: 0.45;
+}
+.board-atmosphere .orb-a {
+  width: 320px;
+  height: 320px;
+  top: 18%;
+  left: -8%;
+  background: radial-gradient(circle, rgba(255, 98, 0, 0.35), transparent 68%);
+  animation: boardDrift 18s ease-in-out infinite alternate;
+}
+.board-atmosphere .orb-b {
+  width: 260px;
+  height: 260px;
+  right: -4%;
+  bottom: 12%;
+  background: radial-gradient(circle, rgba(90, 140, 190, 0.22), transparent 70%);
+  animation: boardDrift 22s ease-in-out infinite alternate-reverse;
+}
+.board-atmosphere .motif {
+  position: absolute;
+  right: 4%;
+  top: 42%;
+  width: min(280px, 28vw);
+  aspect-ratio: 1;
+  opacity: 0.05;
+  background: center / contain no-repeat url("../assets/logo-motif.svg");
+  transform: rotate(12deg);
+}
+@keyframes boardDrift {
+  from { transform: translate(0, 0); }
+  to { transform: translate(18px, -22px); }
+}
+
+.board-page .product-top {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  overflow: visible;
+}
+.board-page .product-bar,
+.board-page .product-wrap {
+  overflow: visible;
+}
+.board-page .banner,
+.board-page .board-stage {
+  position: relative;
+  z-index: 1;
+}
+
+.board-stage {
+  gap: 0;
+  margin-top: 20px;
+}
+
+.list {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), #fff 40%),
+    #fff;
+  border: 1px solid rgba(30, 40, 55, 0.08);
+  border-right: 0;
+  box-shadow: 0 18px 40px rgba(40, 55, 80, 0.06);
+}
+.list::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--board-orange), rgba(255, 98, 0, 0.15));
+  pointer-events: none;
+}
+
+.card {
+  position: relative;
+  padding: 8px;
+  border-radius: 14px;
+  transition: background 0.25s ease, transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.card:hover {
+  background: rgba(255, 98, 0, 0.04);
+  transform: translateY(-2px);
+}
+.card .ph {
+  position: relative;
+  border-radius: 12px;
+  border-bottom: 3px solid transparent;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease, border-color 0.25s ease;
+}
+.card .ph::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 55%, rgba(17, 17, 17, 0.28));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+.card .ph img {
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.card:hover .ph {
+  transform: translateY(-2px);
+  border-color: rgba(255, 98, 0, 0.55);
+  box-shadow: 0 14px 28px rgba(40, 55, 80, 0.12);
+}
+.card:hover .ph img { transform: scale(1.04); }
+.card:hover .ph::after { opacity: 1; }
+.card[aria-pressed="true"] {
+  background: rgba(255, 98, 0, 0.06);
+}
+.card[aria-pressed="true"] .ph {
+  border-color: var(--board-orange);
+  box-shadow: 0 0 0 3px #fff, 0 0 0 5px rgba(255, 98, 0, 0.85), 0 16px 32px rgba(255, 98, 0, 0.18);
+}
+.card .nm {
+  margin-top: 12px;
+  transition: color 0.2s ease;
+}
+.card:hover .nm,
+.card[aria-pressed="true"] .nm { color: var(--board-orange); }
+
+.detail {
+  position: relative;
+  isolation: isolate;
+  background:
+    radial-gradient(ellipse 60% 45% at 100% 0%, rgba(255, 98, 0, 0.22), transparent 55%),
+    linear-gradient(165deg, #17191d 0%, #121417 55%, #0e1013 100%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-left: 0;
+  box-shadow: 0 22px 50px rgba(16, 20, 28, 0.22);
+}
+.detail::before {
+  right: -80px;
+  bottom: -80px;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 98, 0, 0.16);
+}
+.detail::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: radial-gradient(ellipse 70% 60% at 70% 30%, #000 10%, transparent 70%);
+}
+.detail > * { position: relative; z-index: 1; }
+
+.board-page .nav-item.is-open { z-index: 1001; }
+.board-page .menu {
+  z-index: 1002;
+  display: none;
+}
+.board-page .nav-item.is-open .menu {
+  display: grid;
+}
+
+.board-progress {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  padding: 16px 40px 0;
+}
+.board-progress button {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.22);
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease, width 0.25s ease;
+}
+.board-progress button.is-on {
+  width: 22px;
+  border-radius: 999px;
+  background: var(--board-orange);
+}
+.board-progress button:hover { background: rgba(255, 176, 106, 0.8); }
+
+.d-photo {
+  position: relative;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+}
+.d-photo::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: -8px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--board-orange);
+  opacity: 0.85;
+}
+
+.role {
+  background: linear-gradient(135deg, #ff7a1a, #f05600);
+  box-shadow: 0 8px 18px rgba(255, 98, 0, 0.28);
+}
+
+.body p {
+  font-size: 15px;
+  line-height: 1.75;
+}
+.body h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.body h3::before {
+  content: "";
+  width: 14px;
+  height: 2px;
+  background: var(--board-orange);
+  flex: 0 0 auto;
+}
+
+.board-pager {
+  margin-top: 28px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+.board-pager button {
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.board-pager button:hover {
+  transform: translateY(-1px);
+}
+
+.panel.is-swap {
+  animation: boardSwap 0.4s ease;
+}
+@keyframes boardSwap {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+
+.card.is-in {
+  animation: boardCardIn 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes boardCardIn {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (max-width: 900px) {
+  .board-atmosphere { display: none; }
+  .list { border-right: 1px solid rgba(30, 40, 55, 0.08); }
+  .detail { border-left: 1px solid rgba(255, 255, 255, 0.06); }
+  .board-progress { padding: 14px 20px 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .board-atmosphere .orb,
+  .card.is-in,
+  .panel.is-swap { animation: none !important; }
+  .card .ph img,
+  .card:hover .ph,
+  .card:hover { transition: none; transform: none; }
+}
+
+html[data-motion="off"] .board-atmosphere .orb,
+html[data-motion="off"] .card.is-in,
+html[data-motion="off"] .panel.is-swap {
+  animation: none !important;
+}

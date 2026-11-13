@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="auth.title">Sign in | Siyapatha Tenders</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="../assets/logo.png">
+  <link rel="stylesheet" href="../css/tender.css">
+  <link rel="stylesheet" href="../css/splash.css">
+  <script src="../js/splash.js"></script>
+</head>
+<body>
+  <div data-header></div>
+  <main class="auth-layout">
+    <section>
+      <p class="kicker" data-i18n="auth.kicker">Bidder account</p>
+      <h1 data-i18n="auth.h1">Sign in to send a quotation.</h1>
+      <p class="lead" data-i18n="auth.lead">Your account keeps the name, address, and telephone that print on the quotation, and lists every offer you have sent.</p>
+    </section>
+    <form class="auth-card" data-login>
+      <div class="field"><label for="email" data-i18n="auth.email">Email</label><input id="email" name="email" type="email" autocomplete="username" required></div>
+      <div class="field"><label for="password" data-i18n="auth.password">Password</label><input id="password" name="password" type="password" autocomplete="current-password" required></div>
+      <button class="btn btn-fill" type="submit" data-i18n="tn.signin">Sign in</button>
+      <p class="form-status" data-status role="status"></p>
+      <p class="help"><span data-i18n="auth.new">New bidder?</span> <a href="register.html"><b data-i18n="auth.create">Create an account</b></a></p>
+    </form>
+  </main>
+  <script src="../js/i18n.js"></script>
+  <script src="../js/portal.js"></script>
+  <script>Portal.mount("login");</script>
+</body>
+</html>

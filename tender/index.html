@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="tn.title">Vehicle tenders | Siyapatha Finance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="../assets/logo.png">
+  <link rel="stylesheet" href="../css/tender.css">
+  <link rel="stylesheet" href="../css/splash.css">
+  <script src="../js/splash.js"></script>
+</head>
+<body>
+  <div data-header></div>
+  <main class="wrap tn-shell">
+    <section class="tn-hero">
+      <div>
+        <p class="kicker">Siyapatha Finance PLC</p>
+        <h1 data-i18n-html="tn.h1Html">Quote for a vehicle without the <em>paper form</em>.</h1>
+        <p class="lead" data-i18n="tn.lead">The lots below are open for tender at the highest offer. Inspect at the yard, then send your quotation here. The same terms as the printed form still apply, including the Rs. 400/= tender fee.</p>
+      </div>
+      <ul class="tn-facts">
+        <li><b data-count>8</b><span data-i18n="tn.lots">Open lots</span></li>
+        <li><b>20 Nov 2026</b><span data-i18n="tn.close">Quotations close, 3.00 p.m.</span></li>
+        <li><b>Rs. 400/=</b><span data-i18n="tn.fee">Tender fee on every quotation</span></li>
+      </ul>
+    </section>
+
+    <div class="tn-status" role="tablist" data-i18n-aria="tn.filterBy" aria-label="Filter by" data-status-tabs>
+      <button type="button" class="is-on" data-status="all"><span data-i18n="tn.statusAll">All</span> <em data-count-all>0</em></button>
+      <button type="button" data-status="live"><span data-i18n="tn.statusLive">Live</span> <em data-count-live>0</em></button>
+      <button type="button" data-status="closingSoon"><span data-i18n="tn.statusClosing">Closing soon</span> <em data-count-closing>0</em></button>
+      <button type="button" data-status="closed"><span data-i18n="tn.closed">Closed</span> <em data-count-closed>0</em></button>
+    </div>
+
+    <div class="tn-workbench">
+      <aside class="tn-filters">
+        <p class="tn-filters-label" data-i18n="tn.filterBy">Filter by</p>
+        <label class="field"><span data-i18n="tn.searchLabel">Search lots</span><input data-search type="search" data-i18n-placeholder="tn.search" placeholder="Search by vehicle, number, or yard"></label>
+        <label class="field"><span data-i18n="tn.yard">Yard</span>
+          <select data-yard>
+            <option value="" data-i18n="tn.allYards">All yards</option>
+          </select>
+        </label>
+        <label class="field"><span data-i18n="tn.kind">Category</span>
+          <select data-kind>
+            <option value="" data-i18n="tn.allKinds">All categories</option>
+            <option value="Motor car" data-i18n="tn.car">Motor car</option>
+            <option value="Motor coach" data-i18n="tn.coach">Motor coach</option>
+            <option value="Dual purpose" data-i18n="tn.dual">Dual purpose</option>
+          </select>
+        </label>
+        <div class="field tn-year-field">
+          <span data-i18n="tn.yearRange">Manufacturer year</span>
+          <div class="tn-year-range">
+            <label>
+              <span class="visually-hidden" data-i18n="tn.yearFrom">From</span>
+              <input data-year-from type="number" inputmode="numeric" min="1980" max="2030" step="1" placeholder="From">
+            </label>
+            <span class="tn-year-sep" aria-hidden="true">–</span>
+            <label>
+              <span class="visually-hidden" data-i18n="tn.yearTo">To</span>
+              <input data-year-to type="number" inputmode="numeric" min="1980" max="2030" step="1" placeholder="To">
+            </label>
+          </div>
+        </div>
+        <p class="tn-showing" data-showing></p>
+      </aside>
+      <section class="lots" data-lots></section>
+    </div>
+
+    <section class="hq" id="hq" aria-labelledby="how-title">
+      <div class="hq-inner">
+        <h2 id="how-title" class="hq-rv" data-i18n-html="tn.howTitleHtml">How <em>quoting</em> works</h2>
+        <div class="qw" id="qw">
+          <svg class="qsvg" viewBox="0 0 1200 420" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 210C200 90 400 90 600 210S1000 330 1200 210" fill="none" stroke="#ddd7d1" stroke-width="3" stroke-dasharray="3 12" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+            <path id="hq-fg" d="M0 210C200 90 400 90 600 210S1000 330 1200 210" fill="none" stroke="#ff6200" stroke-width="4" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+            <circle id="hq-dot" r="9" fill="#fff" stroke="#ff6200" stroke-width="4" style="filter:drop-shadow(0 0 10px rgba(255,98,0,.45))" vector-effect="non-scaling-stroke"/>
+          </svg>
+          <ol class="qs" id="qs">
+            <li class="up"><span class="nd">01</span><p data-i18n="tn.step1">Choose a lot and check the yard where it can be inspected.</p></li>
+            <li class="up"><span class="nd">02</span><p data-i18n="tn.step2">Register once as a bidder. Your name, address, and telephone fill the quotation.</p></li>
+            <li class="dn"><span class="nd">03</span><p data-i18n="tn.step3">Enter your price in figures and words, and accept the terms.</p></li>
+            <li class="dn"><span class="nd">04</span><p data-i18n="tn.step4">Track the quotation under My quotations. The paper form is still there if you need it.</p></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="yards-block" id="yards">
+      <div class="yards-head">
+        <div>
+          <p class="kicker" data-i18n="tn.yardsKicker">Inspection</p>
+          <h2 data-i18n="tn.yardsTitle">Yard information</h2>
+        </div>
+        <label class="field yards-filter">
+          <span data-i18n="tn.filterYard">Filter by yard</span>
+          <select data-yard-info>
+            <option value="" data-i18n="tn.allYards">All yards</option>
+          </select>
+        </label>
+      </div>
+      <div class="yard-grid" data-yards></div>
+    </section>
+
+    <p class="contacts" data-i18n="tn.contacts">Yard enquiries: Suranjith 076 324 1184 · Srilal 076 573 1397 · Tender desk 0117 605 605. Quotation issued by Siyapatha Finance PLC, No. 46/12, Sayuru Sewana, Nawam Mawatha, Colombo 02.</p>
+  </main>
+  <script src="../js/i18n.js"></script>
+  <script src="../js/portal.js"></script>
+  <script>Portal.mount("tenders");</script>
+</body>
+</html>

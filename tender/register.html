@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="reg.title">Register | Siyapatha Tenders</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="../assets/logo.png">
+  <link rel="stylesheet" href="../css/tender.css">
+  <link rel="stylesheet" href="../css/splash.css">
+  <script src="../js/splash.js"></script>
+</head>
+<body>
+  <div data-header></div>
+  <main class="auth-layout">
+    <section>
+      <p class="kicker" data-i18n="reg.kicker">Create a bidder account</p>
+      <h1 data-i18n="reg.h1">Register once, then quote on any open lot.</h1>
+      <p class="lead" data-i18n="reg.lead">These details are the name, address, and telephone on the Siyapatha quotation. You can edit them on each offer before you submit.</p>
+    </section>
+    <form class="auth-card" data-register>
+      <div class="field"><label for="name" data-i18n="reg.name">Name</label><input id="name" name="name" required></div>
+      <div class="field"><label for="address" data-i18n="reg.address">Address</label><textarea id="address" name="address" required></textarea></div>
+      <div class="field"><label for="tel" data-i18n="reg.tel">Tel No</label><input id="tel" name="tel" type="tel" required></div>
+      <div class="field"><label for="email" data-i18n="auth.email">Email</label><input id="email" name="email" type="email" required></div>
+      <div class="field"><label for="password" data-i18n="auth.password">Password</label><input id="password" name="password" type="password" minlength="6" required></div>
+      <button class="btn btn-fill" type="submit" data-i18n="reg.submit">Create account</button>
+      <p class="form-status" data-status role="status"></p>
+      <p class="help"><span data-i18n="reg.have">Already registered?</span> <a href="login.html"><b data-i18n="tn.signin">Sign in</b></a></p>
+    </form>
+  </main>
+  <script src="../js/i18n.js"></script>
+  <script src="../js/portal.js"></script>
+  <script>Portal.mount("register");</script>
+</body>
+</html>
